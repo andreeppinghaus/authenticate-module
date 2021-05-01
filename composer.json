@@ -1,0 +1,10 @@
+{
+
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "scripts": {
+        "test":"clear; ./vendor/bin/phpunit tests --exclude-group ignore --color",
+	"doc": "phpdoc -d src/"
+    }
+}
