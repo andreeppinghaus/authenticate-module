@@ -63,9 +63,10 @@ final class PasswordTest extends TestCase
         $password = "12345678910Ab@";
         $this->password->validate($password);
         $this->password->generatePassword();
-        assertEquals(true, $this->password->authenticate($password));
+        
+        assertEquals(true, $this->password->authenticate($email="emailvalido", $password));
 
-        assertNotEquals(true, $this->password->authenticate("senha_diferente"));
+        assertNotEquals(true, $this->password->authenticate($email="emailvalido","senha_diferente"));
     }
 
 
