@@ -55,15 +55,17 @@ final class PasswordTest extends TestCase
     }
 
     /**
-     * Após gerar a senha, testar se ela 
-     * esta identica a palavra original
+     * Após validar a senha, vai gerar um hash e logo depois irá testá-la 
+     * constatando que é idêntica a palavra original
      */
     public function testGeracaodeSenha(): void
     {
-        // $this->assertInstanceOf(
-        //     Email::class,
-        //     Email::fromString('user@example.com')
-        // );
+        $password = "12345678910Ab@";
+        $this->password->validate($password);
+        $this->password->generatePassword();
+        assertEquals(true, $this->password->authenticate($password));
+
+        assertNotEquals(true, $this->password->authenticate("senha_diferente"));
     }
 
 
