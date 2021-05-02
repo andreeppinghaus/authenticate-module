@@ -17,12 +17,33 @@ class Password implements PasswordInterface
 
     }
 
-    public function validate(string $password) {
+    /**
+     * Metodo de validação de senha conforme
+     * RF-1.1
+     * @link https://www.codexworld.com/how-to/validate-password-strength-in-php
+     * @param string
+     * @return boolean
+     */
+    public function validate(string $password): bool {
+        $ok = false;
+        // Validate password strength
+        $uppercase = preg_match('@[A-Z]@', $password);
+        $lowercase = preg_match('@[a-z]@', $password);
+        $number    = preg_match('@[0-9]@', $password);
+        $specialChars = preg_match('@[^\w]@', $password);
 
+        if(!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password) < 9
+            || strlen($password) > 16 ) {
+            $ok=false;
+            //echo 'Password should be at least 8 characters in length and should include at least one upper case letter, one number, and one special character.';
+        }else{
+            $ok=true;
+            // echo 'Strong password.';
+        }
+        return $ok;
     }
 
     public function generatePassword(){
-
     }
     
     /**
