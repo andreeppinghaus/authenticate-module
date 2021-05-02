@@ -35,13 +35,23 @@ final class PasswordTest extends TestCase
      * 
      * https://www.codexworld.com/how-to/validate-password-strength-in-php/
      * 
+     * @dataProvider passwordProvider
      */
-    public function testValidacaoSenha(): void
+    public function testValidacaoSenha($password, $expected): void
     {
-        // $this->assertInstanceOf(
-        //     Email::class,
-        //     Email::fromString('user@example.com')
-        // );
+       assertEquals($expected, $this->password->validate($password));
+    }
+
+    public function passwordProvider()
+    {
+        return [
+            ["0",false],
+            ["12345678910",false],
+            ["12345678910A",false],
+            ["12345678910Ab",false],
+            ["12345678910111213451516Ab_",false],
+            ["12345678910Ab@",true],
+        ];
     }
 
     /**
