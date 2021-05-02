@@ -29,7 +29,7 @@ class Password implements PasswordInterface
      * @param string $password
      * @return boolean
      */
-    public function authenticate(string $password): bool{
+    public function authenticate(string $email, string $password): bool{
         $auth = false;
 
         //obs: buscar o usuario no banco de dados com o hash da senha. (provisorio)
