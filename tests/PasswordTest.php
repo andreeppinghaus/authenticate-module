@@ -4,6 +4,7 @@ require_once __DIR__."/../autoload.php";
 use PHPUnit\Framework\TestCase;
 use src\Service\Email;
 use src\Service\Password;
+use src\Service\PasswordService;
 
 use function PHPUnit\Framework\assertEquals;
 use function PHPUnit\Framework\assertNotEquals;
@@ -15,7 +16,7 @@ final class PasswordTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->password = new Password();
+        $this->password = new PasswordService();
     }
 
     /**

@@ -6,5 +6,8 @@
     "scripts": {
         "test":"clear; ./vendor/bin/phpunit tests --exclude-group ignore --color",
 	"doc": "phpdoc -d src/"
+    },
+    "require": {
+        "doctrine/orm": "^2.8"
     }
 }

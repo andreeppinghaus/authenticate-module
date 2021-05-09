@@ -2,31 +2,31 @@
 require_once __DIR__."/../autoload.php";
 
 use PHPUnit\Framework\TestCase;
-use src\Service\Email;
+use src\Service\EmailService;
 
-final class EmailTest extends TestCase
+final class EmailServiceTest extends TestCase
 {
-    protected $email;
+    protected $EmailService;
 
     /**
      * @group ignore
      */
-    public function testCanBeCreatedFromValidEmailAddress(): void
+    public function testCanBeCreatedFromValidEmailServiceAddress(): void
     {
         $this->assertInstanceOf(
-            Email::class,
-            Email::fromString('user@example.com')
+            EmailService::class,
+            EmailService::fromString('user@example.com')
         );
     }
 
     /**
      * @group ignore
      */
-    public function testCannotBeCreatedFromInvalidEmailAddress(): void
+    public function testCannotBeCreatedFromInvalidEmailServiceAddress(): void
     {
         $this->expectException(InvalidArgumentException::class);
 
-        Email::fromString('invalid');
+        EmailService::fromString('invalid');
     }
 
     /**
@@ -36,21 +36,21 @@ final class EmailTest extends TestCase
     {
         $this->assertEquals(
             'user@example.com',
-            Email::fromString('user@example.com')
+            EmailService::fromString('user@example.com')
         );
     }
 
     /**
      * @group ignore
      */
-    public function testSetupEmail() {
+    public function testSetupEmailService() {
 
-        $email = new Email();
-        $email->setEmail('user@example.com');
+        $EmailService = new EmailService();
+        $EmailService->setEmail('user@example.com');
 
         $this->assertEquals(
             'user@example.com',
-            $email->getEmail()
+            $EmailService->getEmail()
         );
     }
 }
