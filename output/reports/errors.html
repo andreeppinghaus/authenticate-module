@@ -67,12 +67,12 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="../reports/errors.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">21</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">36</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="../reports/markers.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
                                 </a>
                             </li>
                             <li>
@@ -97,11 +97,13 @@
 
             <ul class="side-nav nav nav-list">
                 <li class="nav-header">Navigation</li>
-                                                                            <li><a href="#Service/Password.php"><i class="icon-file"></i> Service/Password.php</a></li>
-                                                                                                    <li><a href="#Controller/AutenticationController.php"><i class="icon-file"></i> Controller/AutenticationController.php</a></li>
-                                                                                                    <li><a href="#Service/Email.php"><i class="icon-file"></i> Service/Email.php</a></li>
+                                                                            <li><a href="#Controller/AutenticationController.php"><i class="icon-file"></i> Controller/AutenticationController.php</a></li>
                                                                                                     <li><a href="#Service/EmailInterface.php"><i class="icon-file"></i> Service/EmailInterface.php</a></li>
                                                                                                     <li><a href="#Service/PasswordInterface.php"><i class="icon-file"></i> Service/PasswordInterface.php</a></li>
+                                                                                                    <li><a href="#Service/PasswordService.php"><i class="icon-file"></i> Service/PasswordService.php</a></li>
+                                                                                                    <li><a href="#Service/EmailService.php"><i class="icon-file"></i> Service/EmailService.php</a></li>
+                                                                                                    <li><a href="#Service/AuthenticateManager.php"><i class="icon-file"></i> Service/AuthenticateManager.php</a></li>
+                                                                                                    <li><a href="#Entity/User.php"><i class="icon-file"></i> Entity/User.php</a></li>
                                                                     </ul>
         </div>
 
@@ -112,32 +114,6 @@
             </ul>
 
             
-                            <div class="package-contents">
-                                            <a name="Service/Password.php" id="Service/Password.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Service/Password.php
-                            <small style="float: right;padding-right: 10px;">1</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
                             <div class="package-contents">
                                             <a name="Controller/AutenticationController.php" id="Controller/AutenticationController.php"></a>
                         <h3>
@@ -159,67 +135,6 @@
                                         <td>error</td>
                                         <td>0</td>
                                         <td>No summary was found for this file</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Service/Email.php" id="Service/Email.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Service/Email.php
-                            <small style="float: right;padding-right: 10px;">8</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>7</td>
-                                        <td>No summary for class \src\Service\Email</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method __construct()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>20</td>
-                                        <td>No summary for method fromString()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>25</td>
-                                        <td>No summary for method __toString()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>30</td>
-                                        <td>No summary for method ensureIsValidEmail()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>45</td>
-                                        <td>No summary for method setEmail()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>54</td>
-                                        <td>No summary for method getEmail()</td>
                                     </tr>
                                                             </tbody>
                             </table>
@@ -322,6 +237,210 @@
                             </table>
                         </div>
                                     </div>
+                            <div class="package-contents">
+                                            <a name="Service/PasswordService.php" id="Service/PasswordService.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Service/PasswordService.php
+                            <small style="float: right;padding-right: 10px;">3</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>32</td>
+                                        <td>Name of argument $hash does not match with the DocBlock&#039;s name $password in authenticate()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>32</td>
+                                        <td>The type hint of the argument is incorrect for the type definition of the @param tag with argument $hash in authenticate()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Service/EmailService.php" id="Service/EmailService.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Service/EmailService.php
+                            <small style="float: right;padding-right: 10px;">8</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>7</td>
+                                        <td>No summary for class \src\Service\EmailService</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>10</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for method fromString()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for method __toString()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>30</td>
+                                        <td>No summary for method ensureIsValidEmail()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>45</td>
+                                        <td>No summary for method setEmail()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>54</td>
+                                        <td>No summary for method getEmail()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Service/AuthenticateManager.php" id="Service/AuthenticateManager.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Service/AuthenticateManager.php
+                            <small style="float: right;padding-right: 10px;">8</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>13</td>
+                                        <td>No summary for class \src\Service\AuthenticateManager</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>18</td>
+                                        <td>No summary for method __construct()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for method createAccount()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>55</td>
+                                        <td>No summary for method authenticate()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>14</td>
+                                        <td>No summary for property $passwordService</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $emailService</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>16</td>
+                                        <td>No summary for property $entityManager</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/User.php" id="Entity/User.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/User.php
+                            <small style="float: right;padding-right: 10px;">5</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>18</td>
+                                        <td>No summary for class \src\Entity\User</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>26</td>
+                                        <td>No summary for property $id</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>No summary for property $email</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>36</td>
+                                        <td>No summary for property $password</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
                     </div>
     </section>
 
@@ -362,7 +481,7 @@
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on May 2nd, 2021 at 00:36.
+                    on May 9th, 2021 at 00:19.
                 </section>
             </section>
         </section>
